@@ -45,4 +45,4 @@ function TodosContextProvider({ children }: { children: React.ReactNode }) {
     return <TodosContext.Provider value={{ todos, removeTodo, toggleTodo, addTodo }}>{children}</TodosContext.Provider>;
 }
 
-export default TodosContextProvider;
+export { TodosContext, TodosContextProvider };

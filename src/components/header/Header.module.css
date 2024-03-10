@@ -1,0 +1,8 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--size-500);
+    color: var(--lt-very-light-gray);
+    letter-spacing: var(--size-250);
+}
