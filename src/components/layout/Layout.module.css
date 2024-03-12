@@ -1,6 +1,11 @@
 .container {
+    max-width: 375px;
+    width: 320px;
     position: absolute;
-    top: 15%;
+    top: 112px;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-700);
 }

@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: var(--size-400);
+    background-color: var(--lt-very-light-gray);
+    padding: var(--size-400);
+    border-radius: var(--size-200);
+}
+
+.circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid var(--lt-light-grayish-blue);
+}

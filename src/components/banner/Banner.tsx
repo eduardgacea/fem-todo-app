@@ -1,13 +1,12 @@
 import { ThemeContext } from "../../contexts/theme/ThemeContextProvider";
 import { useScreenWidth } from "../../hooks/useScreenWidth";
 import { TABLET_BREAKPOINT } from "../../config/config";
-import { ThemeContextValue } from "../../types/types";
 import { useContext } from "react";
 
 import styles from "./Banner.module.css";
 
 function Banner() {
-    const { theme } = useContext(ThemeContext) as ThemeContextValue;
+    const { theme } = useContext(ThemeContext);
     const width = useScreenWidth();
 
     const device = width < TABLET_BREAKPOINT ? "mobile" : "desktop";

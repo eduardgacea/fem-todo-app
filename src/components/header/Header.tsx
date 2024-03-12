@@ -1,18 +1,17 @@
 import { ThemeContext } from "../../contexts/theme/ThemeContextProvider";
-import { ThemeContextValue } from "../../types/types";
 import { useContext } from "react";
 
 import styles from "./Header.module.css";
 
 function Header() {
-    const { theme } = useContext(ThemeContext) as ThemeContextValue;
+    const { theme, toggleTheme } = useContext(ThemeContext);
 
     const icon = theme === "dark" ? "sun" : "moon";
 
     return (
         <header className={styles.header}>
             <h1>TODO</h1>
-            <div>
+            <div onClick={toggleTheme}>
                 <img src={`icon-${icon}.svg`} alt="theme toggle icon" />
             </div>
         </header>

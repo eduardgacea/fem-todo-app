@@ -1,0 +1,12 @@
+.input {
+    flex: 1;
+    border: none;
+    font-family: inherit;
+    background-color: transparent;
+    font-size: var(--size-400);
+    outline: none;
+}
+
+.input::placeholder {
+    color: var(--lt-dark-grayish-blue);
+}

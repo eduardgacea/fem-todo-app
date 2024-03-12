@@ -1,8 +1,18 @@
+.header h1,
+.header div,
+.header img {
+    user-select: none;
+}
+
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: var(--size-500);
+    font-size: var(--size-400);
     color: var(--lt-very-light-gray);
-    letter-spacing: var(--size-250);
+    letter-spacing: var(--size-450);
+}
+
+.header > div {
+    cursor: pointer;
 }

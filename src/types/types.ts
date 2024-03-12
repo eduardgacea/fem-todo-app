@@ -2,8 +2,8 @@
 export type Theme = "light" | "dark";
 
 export type ThemeContextValue = {
-    theme: string;
-    setTheme: React.Dispatch<React.SetStateAction<Theme>>;
+    theme: Theme;
+    toggleTheme: () => void;
 };
 
 // todos context types

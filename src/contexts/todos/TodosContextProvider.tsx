@@ -3,7 +3,12 @@ import { createContext, useCallback, useEffect, useReducer } from "react";
 
 import todoData from "../../data/todos.json";
 
-const TodosContext = createContext<TodosContextValue | null>(null);
+const TodosContext = createContext<TodosContextValue>({
+    todos: [],
+    removeTodo: () => {},
+    toggleTodo: () => {},
+    addTodo: () => {},
+});
 
 const initialState: TodosContextState = {
     todos: [],
