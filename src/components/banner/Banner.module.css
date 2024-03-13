@@ -1,5 +1,24 @@
-.banner > img {
+.mobile-light {
+    background: url(bg-mobile-light.jpg);
+}
+
+.mobile-dark {
+    background: url(bg-mobile-dark.jpg);
+}
+
+.desktop-light {
+    background: url(bg-desktop-light.jpg);
+}
+
+.desktop-dark {
+    background: url(bg-desktop-dark.jpg);
+}
+
+.banner {
+    position: fixed;
     width: 100%;
-    vertical-align: bottom;
-    user-select: none;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
 }

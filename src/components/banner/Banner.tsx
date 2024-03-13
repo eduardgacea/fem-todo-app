@@ -11,11 +11,7 @@ function Banner() {
 
     const device = width < TABLET_BREAKPOINT ? "mobile" : "desktop";
 
-    return (
-        <div className={styles.banner} role="banner">
-            <img src={`/public/bg-${device}-${theme}.jpg`} alt="banner" />
-        </div>
-    );
+    return <div className={`${styles.banner} ${styles[`${device}-${theme}`]} `} role="banner"></div>;
 }
 
 export default Banner;
